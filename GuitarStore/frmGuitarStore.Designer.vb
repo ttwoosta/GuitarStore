@@ -102,32 +102,39 @@ Partial Class frmGuitarStore
         Me.lblEnjoy.Size = New System.Drawing.Size(169, 24)
         Me.lblEnjoy.TabIndex = 3
         Me.lblEnjoy.Text = "Enjoy your guitar!"
+        Me.lblEnjoy.Visible = False
         '
         'btnPurchase
         '
+        Me.btnPurchase.BackColor = System.Drawing.Color.Beige
         Me.btnPurchase.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPurchase.Location = New System.Drawing.Point(101, 375)
         Me.btnPurchase.Name = "btnPurchase"
         Me.btnPurchase.Size = New System.Drawing.Size(111, 36)
         Me.btnPurchase.TabIndex = 4
         Me.btnPurchase.Text = "Purchase"
-        Me.btnPurchase.UseVisualStyleBackColor = True
+        Me.btnPurchase.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Beige
+        Me.btnExit.Enabled = False
         Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(74, 535)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(165, 36)
         Me.btnExit.TabIndex = 5
         Me.btnExit.Text = "Exit Guitar Store"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'picGuitar
         '
+        Me.picGuitar.BackColor = System.Drawing.Color.BurlyWood
+        Me.picGuitar.Image = Global.GuitarStore.My.Resources.Resources.classical
         Me.picGuitar.Location = New System.Drawing.Point(310, 91)
         Me.picGuitar.Name = "picGuitar"
-        Me.picGuitar.Size = New System.Drawing.Size(283, 480)
+        Me.picGuitar.Size = New System.Drawing.Size(288, 480)
+        Me.picGuitar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picGuitar.TabIndex = 6
         Me.picGuitar.TabStop = False
         '
@@ -135,6 +142,7 @@ Partial Class frmGuitarStore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.BurlyWood
         Me.ClientSize = New System.Drawing.Size(617, 601)
         Me.Controls.Add(Me.picGuitar)
         Me.Controls.Add(Me.btnExit)
