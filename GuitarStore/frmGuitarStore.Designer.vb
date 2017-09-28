@@ -31,6 +31,7 @@ Partial Class frmGuitarStore
         Me.btnPurchase = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.picGuitar = New System.Windows.Forms.PictureBox()
+        Me.lblSelectGuitar = New System.Windows.Forms.Label()
         Me.grpGuitarChoices.SuspendLayout()
         CType(Me.picGuitar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +52,7 @@ Partial Class frmGuitarStore
         Me.grpGuitarChoices.Controls.Add(Me.rdoSteelStringAcoustic)
         Me.grpGuitarChoices.Controls.Add(Me.rdoClassicalAcoustic)
         Me.grpGuitarChoices.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpGuitarChoices.Location = New System.Drawing.Point(24, 91)
+        Me.grpGuitarChoices.Location = New System.Drawing.Point(24, 120)
         Me.grpGuitarChoices.Name = "grpGuitarChoices"
         Me.grpGuitarChoices.Size = New System.Drawing.Size(264, 169)
         Me.grpGuitarChoices.TabIndex = 2
@@ -102,40 +103,59 @@ Partial Class frmGuitarStore
         Me.lblEnjoy.Size = New System.Drawing.Size(169, 24)
         Me.lblEnjoy.TabIndex = 3
         Me.lblEnjoy.Text = "Enjoy your guitar!"
+        Me.lblEnjoy.Visible = False
         '
         'btnPurchase
         '
+        Me.btnPurchase.BackColor = System.Drawing.Color.Beige
         Me.btnPurchase.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPurchase.Location = New System.Drawing.Point(101, 375)
         Me.btnPurchase.Name = "btnPurchase"
         Me.btnPurchase.Size = New System.Drawing.Size(111, 36)
         Me.btnPurchase.TabIndex = 4
         Me.btnPurchase.Text = "Purchase"
-        Me.btnPurchase.UseVisualStyleBackColor = True
+        Me.btnPurchase.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Beige
+        Me.btnExit.Enabled = False
         Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(74, 535)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(165, 36)
         Me.btnExit.TabIndex = 5
         Me.btnExit.Text = "Exit Guitar Store"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'picGuitar
         '
+        Me.picGuitar.BackColor = System.Drawing.Color.BurlyWood
+        Me.picGuitar.Image = Global.GuitarStore.My.Resources.Resources.classical
         Me.picGuitar.Location = New System.Drawing.Point(310, 91)
         Me.picGuitar.Name = "picGuitar"
-        Me.picGuitar.Size = New System.Drawing.Size(283, 480)
+        Me.picGuitar.Size = New System.Drawing.Size(288, 480)
+        Me.picGuitar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picGuitar.TabIndex = 6
         Me.picGuitar.TabStop = False
+        '
+        'lblSelectGuitar
+        '
+        Me.lblSelectGuitar.AutoSize = True
+        Me.lblSelectGuitar.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSelectGuitar.Location = New System.Drawing.Point(79, 91)
+        Me.lblSelectGuitar.Name = "lblSelectGuitar"
+        Me.lblSelectGuitar.Size = New System.Drawing.Size(155, 21)
+        Me.lblSelectGuitar.TabIndex = 7
+        Me.lblSelectGuitar.Text = "Please select guitar"
         '
         'frmGuitarStore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.BurlyWood
         Me.ClientSize = New System.Drawing.Size(617, 601)
+        Me.Controls.Add(Me.lblSelectGuitar)
         Me.Controls.Add(Me.picGuitar)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnPurchase)
@@ -161,4 +181,5 @@ Partial Class frmGuitarStore
     Friend WithEvents btnPurchase As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents picGuitar As PictureBox
+    Friend WithEvents lblSelectGuitar As Label
 End Class
