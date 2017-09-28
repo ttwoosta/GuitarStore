@@ -31,6 +31,7 @@ Partial Class frmGuitarStore
         Me.btnPurchase = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.picGuitar = New System.Windows.Forms.PictureBox()
+        Me.lblSelectGuitar = New System.Windows.Forms.Label()
         Me.grpGuitarChoices.SuspendLayout()
         CType(Me.picGuitar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,7 +52,7 @@ Partial Class frmGuitarStore
         Me.grpGuitarChoices.Controls.Add(Me.rdoSteelStringAcoustic)
         Me.grpGuitarChoices.Controls.Add(Me.rdoClassicalAcoustic)
         Me.grpGuitarChoices.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpGuitarChoices.Location = New System.Drawing.Point(24, 91)
+        Me.grpGuitarChoices.Location = New System.Drawing.Point(24, 120)
         Me.grpGuitarChoices.Name = "grpGuitarChoices"
         Me.grpGuitarChoices.Size = New System.Drawing.Size(264, 169)
         Me.grpGuitarChoices.TabIndex = 2
@@ -138,12 +139,23 @@ Partial Class frmGuitarStore
         Me.picGuitar.TabIndex = 6
         Me.picGuitar.TabStop = False
         '
+        'lblSelectGuitar
+        '
+        Me.lblSelectGuitar.AutoSize = True
+        Me.lblSelectGuitar.Font = New System.Drawing.Font("Tahoma", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSelectGuitar.Location = New System.Drawing.Point(79, 91)
+        Me.lblSelectGuitar.Name = "lblSelectGuitar"
+        Me.lblSelectGuitar.Size = New System.Drawing.Size(155, 21)
+        Me.lblSelectGuitar.TabIndex = 7
+        Me.lblSelectGuitar.Text = "Please select guitar"
+        '
         'frmGuitarStore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BurlyWood
         Me.ClientSize = New System.Drawing.Size(617, 601)
+        Me.Controls.Add(Me.lblSelectGuitar)
         Me.Controls.Add(Me.picGuitar)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnPurchase)
@@ -169,4 +181,5 @@ Partial Class frmGuitarStore
     Friend WithEvents btnPurchase As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents picGuitar As PictureBox
+    Friend WithEvents lblSelectGuitar As Label
 End Class
