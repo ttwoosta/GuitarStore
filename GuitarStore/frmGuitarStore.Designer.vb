@@ -84,13 +84,11 @@ Partial Class frmGuitarStore
         'rdoClassicalAcoustic
         '
         Me.rdoClassicalAcoustic.AutoSize = True
-        Me.rdoClassicalAcoustic.Checked = True
         Me.rdoClassicalAcoustic.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoClassicalAcoustic.Location = New System.Drawing.Point(47, 36)
         Me.rdoClassicalAcoustic.Name = "rdoClassicalAcoustic"
         Me.rdoClassicalAcoustic.Size = New System.Drawing.Size(132, 21)
         Me.rdoClassicalAcoustic.TabIndex = 0
-        Me.rdoClassicalAcoustic.TabStop = True
         Me.rdoClassicalAcoustic.Text = "Classical Acoustic"
         Me.rdoClassicalAcoustic.UseVisualStyleBackColor = True
         '
@@ -108,6 +106,7 @@ Partial Class frmGuitarStore
         'btnPurchase
         '
         Me.btnPurchase.BackColor = System.Drawing.Color.Beige
+        Me.btnPurchase.Enabled = False
         Me.btnPurchase.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPurchase.Location = New System.Drawing.Point(101, 375)
         Me.btnPurchase.Name = "btnPurchase"
@@ -131,7 +130,6 @@ Partial Class frmGuitarStore
         'picGuitar
         '
         Me.picGuitar.BackColor = System.Drawing.Color.BurlyWood
-        Me.picGuitar.Image = Global.GuitarStore.My.Resources.Resources.classical
         Me.picGuitar.Location = New System.Drawing.Point(310, 91)
         Me.picGuitar.Name = "picGuitar"
         Me.picGuitar.Size = New System.Drawing.Size(288, 480)
