@@ -10,27 +10,32 @@ Public Class frmGuitarStore
     Private Sub rdoClassicalAcoustic_CheckedChanged(sender As Object, e As EventArgs) Handles rdoClassicalAcoustic.CheckedChanged
         ' This code is executed when user taps or clicks 
         ' the Classical acoustic radio button.
-        ' It displays the Classical guitar picture.
+        ' It displays the Classical guitar picture, 
+        ' and enables Purchase button.
 
         picGuitar.Image = My.Resources.classical
+        btnPurchase.Enabled = True
 
     End Sub
 
     Private Sub rdoSteelStringAcoustic_CheckedChanged(sender As Object, e As EventArgs) Handles rdoSteelStringAcoustic.CheckedChanged
         ' This code is executed when user taps or clicks 
         ' the Steel - String  Acoustic radio button.
-        ' It displays the Steel-string guitar picture.
-
+        ' It displays the Steel-string guitar picture,
+        ' and enables Purchase button.
         picGuitar.Image = My.Resources.steel_string
+        btnPurchase.Enabled = True
 
     End Sub
 
     Private Sub rdoElectricGuitar_CheckedChanged(sender As Object, e As EventArgs) Handles rdoElectricGuitar.CheckedChanged
         ' This code is executed when user taps or clicks
         ' the Electric Guitar radio button.
-        ' It displays the Eletric guitar picture.
+        ' It displays the Eletric guitar picture,
+        ' and enables Purchase button.
 
         picGuitar.Image = My.Resources.eletric
+        btnPurchase.Enabled = True
 
     End Sub
 
